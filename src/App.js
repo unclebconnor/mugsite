@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import News from './pages/News';
+import Music from './pages/Music';
+import Contact from './pages/Contact';
+import './style/App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div className="allOfTheThings">
+          <header>
+            <h2>The Top</h2>
+          </header>
+          <nav>
+            <Link className="nav-link" to="/">Home</Link>
+            <Link className="nav-link" to="/about">About</Link>
+            <Link className="nav-link" to="/news">News</Link>
+            <Link className="nav-link" to="/music">Music</Link>
+            <Link className="nav-link" to="/contact">Contact</Link>
+          </nav>
+          <div className="main">
+            <Route path="/" exact component={Home} />
+            <Route path="/about/" component={About} />
+            <Route path="/news/" component={News} />
+            <Route path="/music/" component={Music} />
+            <Route path="/contact/" component={Contact} />
+          </div>
+        </div>
+      </Router>
     );
   }
 }
