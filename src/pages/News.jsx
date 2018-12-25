@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import NewsPost from './NewsPost.jsx';
 import '../style/App.css';
 
 
@@ -7,7 +8,7 @@ class News extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      posts:[]
+      posts:[{id:1}]
     };
   }
 
@@ -20,6 +21,7 @@ class News extends Component {
     axios.get(url)
     .then(res => {
       posts = res.data;
+      console.log('posts:', posts)
       this.setState({
         posts:posts
       })
@@ -32,14 +34,16 @@ class News extends Component {
   // work on making accessible
 
   render() {
-    console.log(this.state);
+    
+    let posts = this.state.posts;
+    console.log(this.state.posts);
+
     return (
       <div className="page">
-        <h2>News - Stuff to add</h2>
-        <p>Feed from Wordpress</p>
-        <p>Title</p>
-        <p>Content</p>
-        <p>Links</p>
+        <h2>News - Stuff to add:</h2>
+        {this.state.posts.map((post,index) => (
+          <p key={index}><NewsPost post={post}/></p>
+        ))}
       </div>
     );
   }

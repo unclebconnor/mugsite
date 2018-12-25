@@ -9,9 +9,13 @@ nav {
 }
 
 .nav-link {
-	margin: 8px;
+	margin: 13px;
 }
 
 .allOfTheThings {
 	text-align: center;
+}
+
+.post-wrapper{
+	border: 1px solid black;
 }

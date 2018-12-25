@@ -26,7 +26,6 @@ app.get('/posts', function(req, res, next) {
 	axios.get(url)
 	.then(function(wpRes) {
 		var posts = wpRes.data.posts;
-		console.log(wpRes.headers);
 		res.send(posts);
 	})
 	.catch(function(err){
