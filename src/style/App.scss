@@ -2,6 +2,11 @@ header {
 	height: 150px;
 }
 
+body {
+	color: lightgray;
+  	background: #000;
+}
+
 nav {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
@@ -19,3 +24,12 @@ nav {
 .post-wrapper{
 	border: 1px solid black;
 }
+
+.pa-demos-iframe {
+	border: 0; 
+	width: 350px; 
+	height: 588px
+}
+
+
+

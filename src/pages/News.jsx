@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import NewsPost from './NewsPost.jsx';
-import '../style/App.css';
+import '../style/App.scss';
 
 
 class News extends Component {

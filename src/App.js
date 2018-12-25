@@ -5,13 +5,20 @@ import About from './pages/About';
 import News from './pages/News';
 import Music from './pages/Music';
 import Contact from './pages/Contact';
-import './style/App.css';
+import './style/App.scss';
+import './style/Stars.scss';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="allOfTheThings">
+          <div id="stars-group-1"></div>
+          <div id="stars-group-2"></div>
+          <div id="stars-group-3"></div>
+          <div id="stars-group-4"></div>
+          <div id="stars-group-5"></div>
+          <div id="stars-group-6"></div>
           <header>
             <h2>The Top</h2>
           </header>
