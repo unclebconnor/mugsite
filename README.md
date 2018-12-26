@@ -1,3 +1,9 @@
+# mugsite
+
+`create-react-app` info below.  This is my music website.  This project also uses a node back end to grab posts from my public wordpress page.  To use that, install and run `nodemon` or `npm start`
+
+Saving the rest below for posterity.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +72,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# mugsite
+
