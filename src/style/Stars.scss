@@ -27,38 +27,38 @@
   	animation-duration: $speed+s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	animation-timing-function: linear;
+	animation-timing-function: ease-in-out;
 	animation-delay: $delay+s;
 }
 
 
 #stars-group-1{
-	@include stars-content(1800, #fff, 200, 10, 0);
+	@include stars-content(3000, #fff, 480, 5, 0);
 }
 
 #stars-group-2{
-	@include stars-content(1800, #fff, 200, 15, 0.1);
+	@include stars-content(3000, #fff, 480, 7, 0.1);
 }
 
 #stars-group-3{
-	@include stars-content(1800, #fff, 200, 16, 0.2);
+	@include stars-content(3000, #fff, 480, 11, 0.2);
 }
 
 #stars-group-4{
-	@include stars-content(1800, #fff, 200, 8, 0.3);
+	@include stars-content(3000, #fff, 480, 13, 0.3);
 }
 
 #stars-group-5{
-	@include stars-content(1800, #fff, 200, 3.3, 0.4);
+	@include stars-content(3000, #fff, 480, 19, 0.4);
 }
 
 #stars-group-6{
-	@include stars-content(1800, #fff, 200, 16, 0.5);
+	@include stars-content(3000, #fff, 480, 17, 0.5);
 }
 
 
 @keyframes glowing-stars {
-    0%   {opacity: 0.4;}
+    0%   {opacity: 0.25;}
     50%  {opacity: 1;}
-    100% {opacity: 0.4;}
+    100% {opacity: 0.25;}
 }

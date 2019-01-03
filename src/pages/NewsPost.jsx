@@ -3,21 +3,21 @@ import '../style/App.scss';
 
 
 class NewsPost extends Component {
-  constructor(props) {
-    super(props);
-    // this.state = { 
-    //   posts:[]
-    // };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   // this.state = { 
+  //   //   posts:[]
+  //   // };
+  // }
 
 
   render() {
-    console.log(this.props)
+    console.log('posts:', this.props)
     return (
       <div className="post-wrapper">
         <h2>Title: {this.props.post.title}</h2>
-        <p>Date: {this.props.post.date}</p>
-        {this.props.post.content}
+        <div>Date: {this.props.post.date}</div>
+        <div>{this.props.post.content}</div>
       </div>
     );
   }

@@ -10,6 +10,7 @@ class Music extends Component {
         	className="pa-demos-iframe" 
         	src="https://bandcamp.com/EmbeddedPlayer/album=574130753/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/" 
         	seamless
+          title="bandcamp-pa-demos"
         >
         	<a href="http://mugfolk.bandcamp.com/album/pa-demos">
         		PA (Demos) by Mug

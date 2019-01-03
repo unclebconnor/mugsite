@@ -35,14 +35,12 @@ class News extends Component {
 
   render() {
     
-    let posts = this.state.posts;
-    console.log(this.state.posts);
-
+    // let posts = this.state.posts;
     return (
       <div className="page">
         <h2>News - Stuff to add:</h2>
         {this.state.posts.map((post,index) => (
-          <p key={index}><NewsPost post={post}/></p>
+          <div key={index}><NewsPost post={post}/></div>
         ))}
       </div>
     );

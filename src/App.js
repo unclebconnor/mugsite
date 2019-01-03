@@ -20,7 +20,7 @@ class App extends Component {
           <div id="stars-group-5"></div>
           <div id="stars-group-6"></div>
           <header>
-            <h1 className="site-header">Mug Site</h1>
+            <h1 className="site-header">Ghost Moon</h1>
           </header>
           <nav>
             <Link className="nav-link" to="/">Home</Link>
