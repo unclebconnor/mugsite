@@ -1,15 +1,17 @@
 // fonts
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Fredericka+the+Great|Libre+Barcode+128+Text|Megrim|Monoton');
 
 header {
-	// height: 150px;
+	
 }
 
 h1{
 	margin:20px !important;
 	padding:0;
-	font-size: 100px;
-	font-family: 'Work Sans', sans-serif;
+	// font-size: 4rem !important;
+	font-family: 'Monoton', cursive;
+	// font-family: 'Fredericka the Great', cursive;
+	// font-family: 'Libre Barcode 128 Text', cursive;
 }
 
 // body {
@@ -20,6 +22,11 @@ nav {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	padding: 13px;
+	font-family: 'Megrim', cursive;
+}
+
+.pad-me {
+	padding: 13px !important;
 }
 
 .nav-link {
@@ -39,3 +46,18 @@ nav {
 	width: 350px; 
 	height: 588px
 }
+
+.got-style-fb {
+	color: #3b5998;
+}
+
+.got-style-ig {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.got-style-bc {
+	color: #629aa9;
+}
+

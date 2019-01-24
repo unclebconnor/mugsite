@@ -23,9 +23,9 @@ class App extends Component {
           <div className="columns is-centered">
             <div className="column is-half">
               <header>
-                <h1 className="site-header">Ghost Moon</h1>
+                <h1 className="site-header is-size-11 is-size-2-touch">Ghost Moon</h1>
               </header>
-              <nav>
+              <nav className="is-size-4 is-size-6-touch">
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/news">News</Link>

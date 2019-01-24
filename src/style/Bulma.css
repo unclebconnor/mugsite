@@ -471,6 +471,10 @@ table th {
   font-size: 0.75rem !important;
 }
 
+.is-size-11 {
+  font-size: 4rem !important;
+}
+
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
     font-size: 3rem !important;
