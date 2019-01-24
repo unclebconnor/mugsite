@@ -5,6 +5,7 @@ import About from './pages/About';
 import News from './pages/News';
 import Music from './pages/Music';
 import Contact from './pages/Contact';
+import './style/Bulma.css';
 import './style/App.scss';
 import './style/Stars.scss';
 
@@ -19,22 +20,26 @@ class App extends Component {
           <div id="stars-group-4"></div>
           <div id="stars-group-5"></div>
           <div id="stars-group-6"></div>
-          <header>
-            <h1 className="site-header">Ghost Moon</h1>
-          </header>
-          <nav>
-            <Link className="nav-link" to="/">Home</Link>
-            <Link className="nav-link" to="/about">About</Link>
-            <Link className="nav-link" to="/news">News</Link>
-            <Link className="nav-link" to="/music">Music</Link>
-            <Link className="nav-link" to="/contact">Contact</Link>
-          </nav>
-          <div className="main">
-            <Route path="/" exact component={Home} />
-            <Route path="/about/" component={About} />
-            <Route path="/news/" component={News} />
-            <Route path="/music/" component={Music} />
-            <Route path="/contact/" component={Contact} />
+          <div className="columns is-centered">
+            <div className="column is-half">
+              <header>
+                <h1 className="site-header">Ghost Moon</h1>
+              </header>
+              <nav>
+                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/news">News</Link>
+                <Link className="nav-link" to="/music">Music</Link>
+                <Link className="nav-link" to="/contact">Contact</Link>
+              </nav>
+              <div className="main">
+                <Route path="/" exact component={Home} />
+                <Route path="/about/" component={About} />
+                <Route path="/news/" component={News} />
+                <Route path="/music/" component={Music} />
+                <Route path="/contact/" component={Contact} />
+              </div>
+            </div>
           </div>
         </div>
       </Router>
