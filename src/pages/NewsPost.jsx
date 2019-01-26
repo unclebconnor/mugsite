@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Moment from 'react-moment';
 import '../style/App.scss';
 
 
@@ -15,9 +16,15 @@ class NewsPost extends Component {
     console.log('posts:', this.props)
     return (
       <div className="post-wrapper">
-        <h2>Title: {this.props.post.title}</h2>
-        <div>Date: {this.props.post.date}</div>
-        <div>{this.props.post.content}</div>
+        <div className="newsPostTitle">
+          <span>Title: </span>
+          <span dangerouslySetInnerHTML={{__html: this.props.post.title}}></span>
+        </div>
+        <div className="newsPostDate">
+          <span>Date: </span>
+          <Moment format="YYYY/MM/DD">{this.props.post.date}</Moment>
+        </div>
+        <div className="newsPostContent" dangerouslySetInnerHTML={{__html: this.props.post.content}} />
       </div>
     );
   }

@@ -34,11 +34,12 @@ class News extends Component {
   // work on making accessible
 
   render() {
-    
+    console.log(this.state.posts)
     // let posts = this.state.posts;
     return (
       <div className="page">
-        <h2>News - Stuff to add:</h2>
+        <div>Add Some space</div>
+        <div>Content on Blog: LINK (coming) </div>
         {this.state.posts.map((post,index) => (
           <div key={index}><NewsPost post={post}/></div>
         ))}
