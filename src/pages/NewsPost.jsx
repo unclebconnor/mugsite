@@ -15,7 +15,7 @@ class NewsPost extends Component {
   render() {
     console.log('posts:', this.props)
     return (
-      <div className="post-wrapper box">
+      <div className="post-wrapper left-align box">
         <div className="news-post-title is-size-4">
           <span dangerouslySetInnerHTML={{__html: this.props.post.title}}></span>
         </div>
