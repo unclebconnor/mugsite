@@ -1,23 +1,7 @@
 // fonts
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Fredericka+the+Great|Libre+Barcode+128+Text|Megrim|Monoton');
 
-header {
-	
-}
-
-h1{
-	margin:20px !important;
-	padding:0;
-	// font-size: 4rem !important;
-	font-family: 'Monoton', cursive;
-	// font-family: 'Fredericka the Great', cursive;
-	// font-family: 'Libre Barcode 128 Text', cursive;
-}
-
-// body {
-//   	background: #000; // needed for stars
-// }
-
+// nav stuff
 nav {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
@@ -25,13 +9,14 @@ nav {
 	font-family: 'Megrim', cursive;
 }
 
-.pad-me {
-	padding: 13px !important;
-}
-
 .nav-link {
 	margin: 13px;
 }
+
+.nav-link-active {
+	border-bottom: 1px solid gray;
+}
+
 
 .allOfTheThings {
 	text-align: center;
@@ -39,6 +24,25 @@ nav {
 
 .post-wrapper{
 	border: 1px solid black;
+	text-align: left !important;
+}
+
+// helpers
+
+.pad-me {
+	padding: 13px !important;
+}
+
+
+// Styling for specific elements
+
+.site-title{
+	margin:20px !important;
+	padding:0;
+	// font-size: 4rem !important;
+	font-family: 'Monoton', cursive;
+	// font-family: 'Fredericka the Great', cursive;
+	// font-family: 'Libre Barcode 128 Text', cursive;
 }
 
 .pa-demos-iframe {

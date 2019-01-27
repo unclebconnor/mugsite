@@ -15,16 +15,15 @@ class NewsPost extends Component {
   render() {
     console.log('posts:', this.props)
     return (
-      <div className="post-wrapper">
-        <div className="newsPostTitle">
-          <span>Title: </span>
+      <div className="post-wrapper box">
+        <div className="news-post-title is-size-4">
           <span dangerouslySetInnerHTML={{__html: this.props.post.title}}></span>
         </div>
-        <div className="newsPostDate">
-          <span>Date: </span>
+        <div className="news-post-content" dangerouslySetInnerHTML={{__html: this.props.post.content}} />
+        <div className="news-post-date is-size-5">
+          <span>Posted: </span>
           <Moment format="YYYY/MM/DD">{this.props.post.date}</Moment>
         </div>
-        <div className="newsPostContent" dangerouslySetInnerHTML={{__html: this.props.post.content}} />
       </div>
     );
   }

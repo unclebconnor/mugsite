@@ -5,7 +5,7 @@ class Music extends Component {
   render() {
     return (
       <div className="page">
-        <h2>Music</h2>
+        <div>More on Bandcamp</div>
         <iframe 
         	className="pa-demos-iframe" 
         	src="https://bandcamp.com/EmbeddedPlayer/album=574130753/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/" 

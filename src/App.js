@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
 import News from './pages/News';
@@ -23,14 +23,14 @@ class App extends Component {
           <div className="columns is-centered">
             <div className="column is-half">
               <header>
-                <h1 className="site-header is-size-11 is-size-2-touch">Ghost Moon</h1>
+                <div className="site-title is-size-11 is-size-2-touch">Ghost Moon</div>
               </header>
               <nav className="is-size-4 is-size-6-touch">
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/about">About</Link>
-                <Link className="nav-link" to="/news">News</Link>
-                <Link className="nav-link" to="/music">Music</Link>
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <NavLink className="nav-link" activeClassName= "nav-link-active" to="/" exact>Home</NavLink>
+                <NavLink className="nav-link" activeClassName= "nav-link-active" to="/about">About</NavLink>
+                <NavLink className="nav-link" activeClassName= "nav-link-active" to="/news">News</NavLink>
+                <NavLink className="nav-link" activeClassName= "nav-link-active" to="/music">Music</NavLink>
+                <NavLink className="nav-link" activeClassName= "nav-link-active" to="/contact">Contact</NavLink>
               </nav>
               <div className="main">
                 <Route path="/" exact component={Home} />

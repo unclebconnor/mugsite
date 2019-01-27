@@ -40,9 +40,11 @@ class News extends Component {
       <div className="page">
         <div>Add Some space</div>
         <div>Content on Blog: LINK (coming) </div>
-        {this.state.posts.map((post,index) => (
-          <div key={index}><NewsPost post={post}/></div>
-        ))}
+        <div className="posts-wrapper">
+          {this.state.posts.map((post,index) => (
+            <div key={index}><NewsPost post={post}/></div>
+          ))}
+        </div>
       </div>
     );
   }
