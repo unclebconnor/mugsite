@@ -25,7 +25,7 @@ class FuzzyTriangle extends Component {
 					<div className="tr-circle">
 						<FuzzyCircle/>
 					</div>
-					<div className="tr-circle">
+					<div className="tr-circle butt">
 						<FuzzyCircle/>
 					</div>
 				</div>

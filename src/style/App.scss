@@ -5,6 +5,7 @@
 nav {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
+	margin-bottom: 25px;
 	padding: 13px;
 	font-family: 'Megrim', cursive;
 }
@@ -73,11 +74,11 @@ nav {
 	margin-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
-	// border: 1px solid blue;
 }
 
 .tr-circle {
 	display: inline-block;
 	text-align: center;
+	z-index: 1;
 }
 

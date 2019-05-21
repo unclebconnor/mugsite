@@ -1,7 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import "../style/App.scss";
 
-class FuzzyCircle extends Component {
+class FuzzyCircle extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {};
+
+		this.makeSound = this.makeSound.bind(this);
+	};
+
+	makeSound() {
+		console.log('making sound');
+	}
+
 	render() {
 		return (
 			<div>
@@ -15,6 +26,7 @@ class FuzzyCircle extends Component {
 							stroke-width="3"
 							fill="lightgrey"
 							opacity="0.15"
+							onMouseOver={this.makeSound}
 						/>
 					</svg>
 				</div>
