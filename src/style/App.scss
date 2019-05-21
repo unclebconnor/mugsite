@@ -49,8 +49,8 @@ nav {
 }
 
 .pa-demos-iframe {
-	border: 0; 
-	width: 350px; 
+	border: 0;
+	width: 350px;
 	height: 588px
 }
 
@@ -66,5 +66,18 @@ nav {
 
 .got-style-bc {
 	color: #629aa9;
+}
+
+
+.circle-wrapper svg {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	// border: 1px solid blue;
+}
+
+.tr-circle {
+	display: inline-block;
+	text-align: center;
 }
 
