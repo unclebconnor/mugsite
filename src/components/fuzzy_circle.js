@@ -9,7 +9,7 @@ class FuzzyCircle extends React.Component {
 		this.makeSound = this.makeSound.bind(this);
 	};
 
-	makeSound() {
+	makeSound = e => {
 		console.log('making sound');
 	}
 
@@ -18,6 +18,9 @@ class FuzzyCircle extends React.Component {
 			<div>
 				<div className="circle-wrapper rel">
 					<svg height="100" width="100">
+					<filter id="blurMe">
+    					<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+  					</filter>
 						<circle
 							cx="50"
 							cy="50"
@@ -26,7 +29,8 @@ class FuzzyCircle extends React.Component {
 							stroke-width="3"
 							fill="lightgrey"
 							opacity="0.15"
-							onMouseOver={this.makeSound}
+							onMouseOver={e => this.makeSound(e)}
+							filter="url(#blurMe)"
 						/>
 					</svg>
 				</div>
